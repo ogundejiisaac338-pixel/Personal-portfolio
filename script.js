@@ -12,14 +12,14 @@ themeBtn.addEventListener("click", function () {
     }
 });
 
+
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
 menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    menuBtn.classList.toggle("active"); // ☰ → X
+    navLinks.classList.toggle("show");  // Open menu
 });
-
-
 
 // Initialize EmailJS
 emailjs.init("cjc6Hpl8sHLJEB-J7");
